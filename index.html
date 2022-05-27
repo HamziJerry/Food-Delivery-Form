@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+
+    <title>Welcome to Jerry Foods</title>
+  </head>
+  <body>
+    <div id="success" class="alert alert-success alert-dismissible fade" role="alert">
+        <strong>Success!</strong> Your food delivered successfully - Thank You.
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+      </div>
+      <div id="failure" class="alert alert-danger alert-dismissible fade" role="alert">
+        <strong>Error!</strong> Your food not delivered due to some error - Sorry.
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+      </div>
+    <div class="container my-4">
+      <h1 class="text-center">Food Delivery Form</h1>
+      <form id="form-submit">
+        <div class="form-group">
+          <label for="name" class="form-label">Name</label>
+          <input
+            type="text"
+            class="form-control"
+            id="name"
+            name="name"
+            placeholder="Enter your name"
+          />
+          <div id="usernameValid" class="invalid-feedback">
+            Your username must be 3 to 10 characters long and cannot start with
+            a number
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="email" class="form-label">Email</label>
+          <input
+            type="text"
+            class="form-control"
+            id="email"
+            name="email"
+            placeholder="Enter your Email"
+          />
+          <div id="emailValid" class="invalid-feedback">
+            Enter a valid email address like example@gmail.com
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="phone" class="form-label">Phone Number</label>
+          <input
+            type="text"
+            class="form-control"
+            id="phone"
+            name="phone"
+            placeholder="Enter your phone number"
+          />
+          <div id="phoneValid" class="invalid-feedback">
+            Your phone number consist of only 11 digits
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="address" class="form-label">Address</label>
+          <input
+            type="text"
+            class="form-control"
+            id="address"
+            placeholder="address here... like 1234 Main St"
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="menu" class="form-label">Food Menu</label>
+          <select id="menu" class="form-select" name="menu">
+            <option selected>Choose...</option>
+            <option>Pizza</option>
+            <option>Zinger Burger</option>
+            <option>Paratha Roll</option>
+            <option>Chicken Wings Basket</option>
+            <option>French Fries</option>
+            <option>Chicken Lollipops</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="message" class="form-label">Message</label>
+          <textarea
+            class="form-control"
+            id="message"
+            name="message"
+            rows="3"
+            placeholder="Any message here..."
+          ></textarea>
+        </div>
+
+        <div class="form-group">
+          <div class="d-grid gap-2">
+            <button
+              type="submit"
+              id="deliverBtn"
+              class="btn btn-primary my-2 btn-lg"
+            >
+              Deliver
+            </button>
+          </div>
+        </div>
+      </form>
+    </div>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+      integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+      integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+      crossorigin="anonymous"
+    ></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="./index.js"></script>
+  </body>
+</html>
